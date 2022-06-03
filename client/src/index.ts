@@ -1,6 +1,8 @@
 import "./styles/index.css";
-const main = () => {
-  console.log("Code with Ahsan, Hello World 123!");
-};
 
-main();
+const redButton = document.querySelector<HTMLButtonElement>(".redbutton");
+const heading = document.querySelector<HTMLHeadingElement>(".heading");
+
+redButton.addEventListener("click", () => {
+   heading.classList.toggle("hidden");
+});

@@ -48,8 +48,20 @@ window.addEventListener("DOMContentLoaded", async () => {
    }
 
    const npcInnerHtml = allNPCs.data.map((el: DataValues, index: number) => {
-      return ``;
+      return `
+         <div class="flex w-[366px] h-[217px] m-1">
+            <img src=${el.image} width="131px" height="217px" />
+            <div class="w-[235px] h-[217px] bg-camel text-black">
+               <p>${el.name}</p>
+               <p>${el.location}</p>
+               <p>${el.role}</p>
+               <p>${el.quote}</p>
+            </div>
+         </div>
+      `;
    });
+
+   npcCont.innerHTML = npcInnerHtml;
 });
 
 //figure out how to add multiple pages

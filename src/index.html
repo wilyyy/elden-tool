@@ -4,17 +4,48 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Oswald&display=swap"
+         rel="stylesheet"
+      />
+      <title>Elden Tool</title>
    </head>
    <body
-      class="w-screen h-screen bg-gray-800 flex flex-col justify-evenly items-center text-white"
+      class="w-screen h-screen bg-richBlack flex flex-col justify-evenly items-center text-camel font-oswald"
    >
-      <h1 class="heading text-3xl">Appear</h1>
-      <button
-         class="redbutton bg-green-800 hover:bg-green-300 transition-all w-1/4 h-[140px] text-black"
-      >
-         Button
-      </button>
+      <h1 class="text-8xl font-medieval animate-bounce">Elden Tool</h1>
+      <div class="w-1/2 h-[170px] flex flex-col justify-between items-center text-center">
+         <p>
+            A vanilla typescript application created by myself, William Laurel for
+            learning. The premise of this project is to act as a small wikipedia for
+            different facets for the role playing game Elden Ring. I also plan to develop
+            small features that will help make life easier for Elden Ring players. This
+            project uses
+            <a
+               class="font-bold text-crayola underline hover:text-red-300 duration-500"
+               href="https://docs.eldenring.fanapis.com/"
+               target="_blank"
+               >public Elden Ring API from Deliton.</a
+            >
+         </p>
+         <p>Key tools used: Typescript, Tailwind, Webpack</p>
+         <div class="flex w-1/4 justify-evenly items-center">
+            <a
+               class="font-bold text-crayola underline hover:text-red-300 duration-500"
+               href="https://github.com/wilyyy/elden-tool"
+               target="_blank"
+               >Source Code</a
+            >
+            <p>&bull;</p>
+            <a
+               class="font-bold text-crayola underline hover:text-red-300 duration-500"
+               href="https://www.willydev.com/"
+               target="_blank"
+               >My Portfolio</a
+            >
+         </div>
+      </div>
       <script src="./bundle.js"></script>
    </body>
 </html>

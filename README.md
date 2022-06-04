@@ -1,4 +1,4 @@
-# Elden Tool
+# Elden Tool [work in progress]
 
 A vanilla typescript application created by myself, William Laurel for learning. The premise of this project is to act as a small wikipedia for different facets for the role playing game Elden Ring. I also plan to develop small features that will help make life easier for Elden Ring players. This project uses [public Elden Ring API from Deliton.](https://docs.eldenring.fanapis.com/)
 

@@ -1,14 +1,24 @@
 import "./styles/index.css";
+import { Pages, PageKeys } from "./data/pages";
 
-//test code
-// const redButton = document.querySelector<HTMLButtonElement>(".redbutton");
-// const heading = document.querySelector<HTMLHeadingElement>(".heading");
+window.addEventListener("DOMContentLoaded", () => {
+   const pageCont = document.querySelector(".pageCont");
 
-// console.log("hello");
+   const navInnerHtml = Pages.map((el: PageKeys, index: number) => {
+      return `
+      <a
+         class="w-[100px] h-[50px] flex justify-center items-center bg-camel text-richBlack m-1 rounded-md hover:bg-camelLight duration-500"
+         href="${el.src}"
+      >
+         ${el.name}
+      </a>
+   `;
+   });
 
-// redButton.addEventListener("click", () => {
-//    heading.classList.toggle("hidden");
-// });
+   pageCont.innerHTML = navInnerHtml.join("");
+});
+
+//Home
 
 // NPC functions--------------------------------
 //fetch NPC data
